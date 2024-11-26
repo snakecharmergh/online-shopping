@@ -1,4 +1,5 @@
-how to fix in main the import of "./reportWebVitals";
+how to fix in main the import of "./reportWebVitals";>><similar problem in App.tsx
 breadcrumb explain the third title
 what does the offset in AppHeader label cart mean?
 should the AppHeader key  be'card' or 'cart'?
+branch 5 product service + branch 6 product page >>> nothing is displayed
