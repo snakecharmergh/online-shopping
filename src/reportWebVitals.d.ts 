@@ -1,0 +1,12 @@
+declare module './reportWebVitals' {
+  export type ReportHandler = (metric: {
+    name: string;
+    value: number;
+    delta: number;
+    id: string;
+    entries: PerformanceEntry[];
+  }) => void;
+
+  const reportWebVitals: (onPerfEntry?: ReportHandler) => void;
+  export default reportWebVitals;
+}
