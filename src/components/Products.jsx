@@ -3,13 +3,18 @@ import React from "react";
 import Product from "./Product";
 
 //Gutters are the gaps between column content, created by horizontal padding
-const Products = ({ productsData }) => {
+const Products = ({ productsData, cart, setCart }) => {
   return (
-    <Row gutter={[16, 16]}>
+    <>
       {productsData?.map((productItem) => (
-        <Product productData={productItem} key={productItem.id} />
+        <Product
+          productData={productItem}
+          cart={cart}
+          setCart={setCart}
+          key={productItem.id}
+        />
       ))}
-    </Row>
+    </>
   );
 };
 
