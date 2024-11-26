@@ -6,7 +6,7 @@ import AppBreadcrumb from "./AppBreadcrumb";
 
 const { Content } = Layout;
 
-const AppContent = () => {
+const AppContent = ({ productsData }) => {
   return (
     <Content
       className="site-layout"
@@ -23,8 +23,12 @@ const AppContent = () => {
         }}
       >
         <Routes>
-          <Route path="/" Component={Products} exact />
-          <Route path="/cart" Component={Cart} />
+          <Route
+            path="/"
+            element={<Products productsData={productsData} />}
+            exact
+          />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
     </Content>

@@ -1,4 +1,5 @@
 import { Button, Card, Col } from "antd";
+
 const { Meta } = Card;
 
 const Product = ({ productData }) => {
